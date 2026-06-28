@@ -465,3 +465,65 @@ html {
 section {
   scroll-margin-top: 80px;
 }
+/* 🌿 TABLET + MOBILE RESPONSIVE DESIGN */
+
+/* 📱 Mobile (0 - 768px) */
+@media (max-width: 768px) {
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card,
+  .story-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 📱💻 Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .menu-grid,
+  .story-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-card,
+  .story-card {
+    width: 95%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
