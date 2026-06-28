@@ -1,0 +1,467 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2E7D32;
+}
+
+/* Nav links */
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #2E7D32;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  /* 👉 ADD YOUR IMAGE HERE */
+  background: url("images/hero2.jpg") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Dark overlay for readability */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+}
+
+/* Hero text container */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Main title */
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* Buttons container */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Button base */
+.btn {
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Primary button (green) */
+.primary {
+  background: #2E7D32;
+  color: white;
+}
+
+.primary:hover {
+  background: #1b5e20;
+}
+
+/* Secondary button (outline) */
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.secondary:hover {
+  background: white;
+  color: black;
+}
+
+/* ---------------- ABOUT SECTION ---------------- */
+.about {
+  padding: 100px 60px;
+  background: #f8f5f0;
+}
+
+/* container */
+.about-box {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-box h2 {
+  font-size: 36px;
+  color: #2E7D32;
+  margin-bottom: 10px;
+}
+
+/* intro text */
+.intro {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* GRID (IMPORTANT FOR MARKS) */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* cards */
+.about-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: left;
+}
+
+/* hover effect */
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card h3 {
+  color: #2E7D32;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------------- MENU SECTION ---------------- */
+.menu {
+  padding: 100px 60px;
+  background: #f8f5f0;
+  text-align: center;
+}
+
+
+/* 🌿 MENU TITLE - NATURE SERIF STYLE */
+.menu-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 42px;
+  color: #2E7D32;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* decorative underline */
+.menu-title::after {
+  content: "";
+  width: 120px;
+  height: 3px;
+  background: #66BB6A;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 5px;
+}
+
+/* optional soft glow effect */
+.menu-title {
+  text-shadow: 0 2px 10px rgba(46,125,50,0.08);
+}
+
+/* subtitle */
+.menu-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* category headings */
+.category {
+  font-size: 24px;
+  margin: 40px 0 20px;
+  color: #3b3b3b;
+  font-family: "Georgia", serif;
+  position: relative;
+}
+
+/* GRID (IMPORTANT FOR MARKS) */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* menu cards */
+.menu-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* hover effect */
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+/* images */
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* title */
+.menu-card h4 {
+  color: #2E7D32;
+  margin: 15px 0 5px;
+}
+
+/* description */
+.menu-card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ---------------- SPACE / INTERIOR SECTION ---------------- */
+.space {
+  padding: 100px 60px;
+  background: #f8f5f0;
+  text-align: center;
+}
+
+/* title */
+.space-title {
+  font-family: "Georgia", serif;
+  font-size: 40px;
+  color: #2E7D32;
+  margin-bottom: 10px;
+}
+
+/* subtitle */
+.space-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.space-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* cards */
+.space-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: left;
+}
+
+/* hover */
+.space-card:hover {
+  transform: translateY(-6px);
+}
+
+/* images */
+.space-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* title */
+.space-card h3 {
+  color: #2E7D32;
+  margin: 15px 15px 5px;
+}
+
+/* text */
+.space-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 15px 20px;
+}
+
+/* ---------------- STORY GRID INTERIOR ---------------- */
+.space-alt {
+  padding: 100px 60px;
+  background: #f8f5f0;
+  text-align: center;
+}
+
+/* title */
+.space-title {
+  font-family: "Georgia", serif;
+  font-size: 40px;
+  color: #2E7D32;
+  margin-bottom: 10px;
+}
+
+/* subtitle */
+.space-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* card (different style from before) */
+.story-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* hover */
+.story-card:hover {
+  transform: scale(1.03);
+}
+
+/* image */
+.story-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* text area */
+.story-text {
+  padding: 15px;
+  text-align: left;
+}
+
+/* title */
+.story-text h3 {
+  color: #2E7D32;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* description */
+.story-text p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+.contact {
+  padding: 100px 60px;
+  background: white;
+  text-align: center;
+}
+
+/* title */
+.contact-title {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  color: #2E7D32;
+  margin-bottom: 30px;
+}
+
+/* box */
+.contact-box {
+  display: inline-block;
+  background: #f8f5f0;
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* text */
+.contact-box p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  background: #112f13;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
